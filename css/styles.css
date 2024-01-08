@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "MontserratAlternates";
+  font-style: normal;
+  src: local("MontserratAlternates-Bold"), local("Montserrat Alternates Bold"),
+    url("../font/MontserratAlternates-Bold.ttf") format(TrueType);
+  font-weight: 700;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Контент */
+.content {
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+  padding: 40px 80px;
+  align-items: center;
+  gap: 40px;
+}
+
+.content__wrapper-text {
+  width: 561px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
+}
+
+/* Карточки */
+
+.block-card {
+  display: flex;
+  width: 1440px;
+  padding: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.block-card__title {
+  display: block;
+  color: var(--black, #24252e);
+  font-family: MontserratAlternates;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.block-card_title-red {
+  color: var(--red, #ee3124);
+  font-family: MontserratAlternates;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.wrapper-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+/* Вакансии */
+
+.vacancies {
+  display: flex;
+  width: 1440px;
+  padding: 0px 80px 80px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.vacancies__title {
+  width: 100%;
+  color: var(--black, #24252e);
+  font-family: Montserrat Alternates;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.vacancies__title-red {
+  color: var(--red, #ee3124);
+  font-family: Montserrat Alternates;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.vacancies__wrapper {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 334px;
+  border-bottom: 0.5px solid var(--background, #e2e8f7);
+}
+
+.vacancies__announcement {
+  display: flex;
+  width: 745px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.vacancies__profession {
+  align-self: stretch;
+  color: var(--black, #24252e);
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.vacancies__city {
+  align-self: stretch;
+  color: var(--light-grey, #7f7f7f);
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.vacancies__btn {
+  padding: 16px 32px;
+  width: 161px;
+  border-radius: 50px;
+  border: 1px solid var(--red, #ee3124);
+  background: var(--white, #fff);
+  color: #24252e;
+  text-align: center;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
