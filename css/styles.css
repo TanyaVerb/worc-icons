@@ -11,7 +11,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+html {
+  font-family: "MontserratAlternates";
+  font-style: normal;
+  line-height: normal;
+}
 /* Контент */
 .content {
   display: flex;
@@ -20,6 +24,7 @@
   padding: 40px 80px;
   align-items: center;
   gap: 40px;
+  background: var(--background, #e2e8f7);
 }
 
 .content__wrapper-text {
@@ -28,6 +33,54 @@
   flex-direction: column;
   align-items: start;
   gap: 40px;
+}
+
+.content__title {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  color: var(--black, #24252e);
+}
+.content__text {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--black, #24252e);
+}
+
+.content__img {
+  width: 605px;
+  height: 605px;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center;
+  margin: 0 auto; */
+  flex-shrink: 0;
+}
+.content__img-circle {
+  width: 605px;
+  height: 605px;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 605px;
+  background: var(--white, #fff);
+  /* filter: blur(50px); */
+}
+.content__img-container {
+  width: 605px;
+  height: 605px;
+  /* margin: 75px 28px 33.6px 23px; */
+  flex-shrink: 0;
+  border-radius: 605px;
+  position: absolute;
+  top: 75px;
+  bottom: 33.61px;
+  left: 23px;
+  right: 28px;
+}
+.content__image {
+  /* width: 100%; */
+  /* object-fit: contain; */
 }
 
 /* Карточки */
@@ -43,20 +96,20 @@
 .block-card__title {
   display: block;
   color: var(--black, #24252e);
-  font-family: MontserratAlternates;
+  /* font-family: 'MontserratAlternates'; */
   font-size: 40px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 .block-card_title-red {
   color: var(--red, #ee3124);
-  font-family: MontserratAlternates;
+  /* font-family: 'MontserratAlternates'; */
   font-size: 40px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
-  line-height: normal;
+  /* line-height: normal; */
   text-transform: uppercase;
 }
 .wrapper-cards {
@@ -79,21 +132,27 @@
 
 .vacancies__title {
   width: 100%;
-  color: var(--black, #24252e);
-  font-family: Montserrat Alternates;
   font-size: 40px;
-  font-style: normal;
+}
+
+.title {
+  color: var(--black, #24252e);
+  /* font-family: "MontserratAlternates"; */
+  /* font-style: normal; */
   font-weight: 700;
-  line-height: normal;
+  /* line-height: normal; */
 }
 .vacancies__title-red {
-  color: var(--red, #ee3124);
-  font-family: Montserrat Alternates;
   font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   text-transform: lowercase;
+}
+
+.title-red {
+  color: var(--red, #ee3124);
+  /* font-family: "Montserrat Alternates"; */
+  /* font-style: normal; */
+  font-weight: 700;
+  /* line-height: normal; */
 }
 
 .vacancies__wrapper {
@@ -116,21 +175,21 @@
 .vacancies__profession {
   align-self: stretch;
   color: var(--black, #24252e);
-  font-family: Montserrat Alternates;
+  /* font-family: Montserrat Alternates; */
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 600;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 .vacancies__city {
   align-self: stretch;
   color: var(--light-grey, #7f7f7f);
-  font-family: Montserrat Alternates;
+  /* font-family: Montserrat Alternates; */
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 400;
-  line-height: normal;
+  /* line-height: normal; */
 }
 .vacancies__btn {
   padding: 16px 32px;
@@ -140,10 +199,23 @@
   background: var(--white, #fff);
   color: #24252e;
   text-align: center;
-  font-family: Montserrat Alternates;
+  /* font-family: Montserrat Alternates; */
   font-size: 16px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 500;
-  line-height: normal;
+  /* line-height: normal; */
   text-transform: capitalize;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: var(--red, #ee3124);
+  color: white;
+  padding: 16px 32px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font: inherit;
+  text-align: center;
 }
