@@ -16,6 +16,14 @@ html {
   font-style: normal;
   line-height: normal;
 }
+a,
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
 /* Контент */
 .content {
   display: flex;
@@ -87,11 +95,16 @@ html {
 
 .block-card {
   display: flex;
-  width: 1440px;
-  padding: 80px;
+  /* width: 1440px;
+  padding: 80px; */
   flex-direction: column;
   align-items: flex-start;
   gap: 60px;
+}
+
+.block {
+  width: 1440px;
+  padding: 80px;
 }
 .block-card__title {
   display: block;
@@ -214,8 +227,118 @@ html {
   background: var(--red, #ee3124);
   color: white;
   padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* .btn {
   font-size: 1.6rem;
   font-weight: 500;
-  font: inherit;
-  text-align: center;
+  border-radius: 5rem;
+  line-height: 1.95rem;
+  padding: 16px 32px;
+  cursor: pointer;
+} */
+
+.btn:active {
+  scale: 0.95;
+}
+
+.btn_theme_primary {
+  color: white;
+  border: 1px solid #ee3124;
+  background-color: #ee3124;
+}
+
+.btn_theme_primary:hover {
+  border: 1px solid #b20000;
+  background-color: #b20000;
+}
+
+.btn_theme_primary:disabled {
+  border: 1px solid #ced5dd;
+  background-color: #ced5dd;
+}
+
+.btn_theme_secondary {
+  color: #24252e;
+  border: 1px solid #ee3124;
+  background-color: white;
+}
+
+.btn_theme_secondary:hover {
+  color: #24252e;
+  border: 1px solid #b20000;
+  background-color: white;
+}
+
+.btn_theme_secondary:disabled {
+  color: #24252e;
+  border: 1px solid #ced5dd;
+  background-color: white;
+}
+
+.application__title {
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.application_title_red {
+  text-transform: uppercase;
+}
+
+.application__text {
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  height: 132px;
+  padding: 40px 80px;
+  gap: 40px;
+  border-radius: 100px;
+  background: #24252e;
+} */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1280px;
+  height: 132px;
+  padding: 40px 80px;
+  gap: 40px;
+  border-radius: 100px;
+  background: #24252e;
+}
+
+.form__input {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 260px;
+  padding: 12px 20px;
+
+  border-radius: 50px;
+  /* background: #fff; */
+  font-size: 16px;
+  font-weight: 400;
+  /* color: #7f7f7f; */
+}
+
+.form__input::placeholder {
+  color: #7f7f7f;
+  font-family: inherit;
+  background: #fff;
+}
+.form__btn {
+  width: 225px;
+  height: 52px;
+  font-family: inherit;
+  white-space: nowrap;
 }
